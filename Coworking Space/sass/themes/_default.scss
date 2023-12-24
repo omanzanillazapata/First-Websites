@@ -1,0 +1,15 @@
+html * {
+    font-family: $GeneralFont;
+}
+
+div.page{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    font-family: $TitleFont;
+    font-size: 3em;
+    padding-top: 1%;
+}
