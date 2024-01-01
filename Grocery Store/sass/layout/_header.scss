@@ -1,0 +1,32 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    nav ul{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        li:first-of-type a{
+            color: $redFont;
+        }
+        li+li a{
+            text-decoration: none;
+            color: $grayFont;
+        }
+    }
+    aside ul{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        li:nth-of-type(2) a{
+            color: $redFont;
+        }
+        li:nth-of-type(3) a{
+            text-decoration: none;
+            color: white;
+            background-color: $redFont;
+            padding: 10px 30px;
+            border-radius: 10px;
+        }
+    }
+}

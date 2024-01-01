@@ -1,0 +1,33 @@
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 130px;
+    padding: 20px 0;
+    nav ul{
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: $blackFont;
+        }
+    }
+    aside{
+        margin-left: auto;
+        ul{
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: $whiteFont;
+        }
+        li:last-of-type a{
+            color: $whiteFont;
+            background-color: $redFont;
+            padding: 10px 35px;
+        }
+    }
+    }  
+}
