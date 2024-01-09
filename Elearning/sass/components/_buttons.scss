@@ -1,0 +1,15 @@
+.button{
+    @include button();
+}
+
+.hero .button{
+    @include buttonGradient($bg-color: $orangeGradient);
+}
+
+.link{
+    @include button_link();
+}
+
+footer .button{
+    @include buttonGradient($bg-color: $blueGradient)
+}

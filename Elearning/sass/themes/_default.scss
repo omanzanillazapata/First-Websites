@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: $font;
+}
+
+body{
+    overflow-x: hidden;
+    font-size: 16px;
+    @include breakpoint(tablet){
+        background-image: url(../img/hero_img_tablet.png);
+        background-repeat: no-repeat;
+        background-size: 300px;
+        background-position: top 60px right;
+    }
+    @include breakpoint(desktop){
+        background-image: url(../img/hero_img.png);
+        background-repeat: no-repeat;
+        background-size: 530px;
+        background-position: top right;
+    }
+}
+img{
+    max-width: 100%;
+}

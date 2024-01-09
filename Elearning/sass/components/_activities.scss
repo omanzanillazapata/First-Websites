@@ -1,0 +1,72 @@
+.activities{
+    padding-bottom: 80px;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    .container{
+        @include breakpoint(tablet){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px 20px;
+        }
+        @include breakpoint(desktop){
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 60px 30px;
+        }
+    }
+    &_header{
+        background-image: $orangeGradient;
+        padding: 25px 30px;
+        color: $white;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        @include breakpoint(tablet){
+            margin-bottom: 0;
+            padding-top: 56px;
+        }
+    }
+    &_item{
+        padding: 56px 28px 40px;
+        margin-bottom: 40px;
+        background-color: $white;
+        border-radius: 10px;
+        position: relative;
+        @include breakpoint(tablet){
+            margin-bottom: 0;
+        }
+        @include breakpoint(desktop){
+            margin-bottom: 0;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &_title{
+            font-size: 20px;
+            color: $black;
+            margin-bottom: 16px;
+        }
+        &_description{
+            font-size: 16px;
+            line-height: 26px;
+            color: $gray;
+            margin-bottom: 24px;
+        }
+        &_icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: $orangeGradient;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            margin-bottom: 24px;
+            position: absolute;
+            left: 30px;
+            top: -25px;
+        }
+        &_cta{
+        }
+        &_animation{
+
+        }
+    }
+}
