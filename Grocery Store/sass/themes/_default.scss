@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $primaryFont;
+    color: $blackFont;
+    h1{
+        margin-top: 50px;
+        font-family: $titleFont;
+        font-size: 3em;
+        span{
+            color: $redFont;
+            font-weight: bold;
+        }
+    }
+}
+
+div.page{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    @include breakpoint(mobile){
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+body{
+    background-image: url(../img/delivery-handsome.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 450px 50px;
+    @include breakpoint(mobile){
+        background-image: none;
+    }
+}
