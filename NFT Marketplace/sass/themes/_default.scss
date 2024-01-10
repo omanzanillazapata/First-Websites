@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $primaryFont;
+}
+
+div.page{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    @include breakpoint(mobile){
+        padding: 10px;
+    }
+}
+
+body::before{
+    content: '';
+    width: 40%;
+    background-color: $blackFont;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    @include breakpoint(mobile){
+        background-color: white;
+        z-index: -1;
+    }
+}
