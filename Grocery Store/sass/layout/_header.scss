@@ -1,0 +1,51 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    @include breakpoint(mobile){
+        img{
+            width: 80%;
+        }
+    }
+    nav ul{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        @include breakpoint(mobile){
+            display: none;
+        }
+        li:first-of-type a{
+            color: $redFont;
+        }
+        li+li a{
+            text-decoration: none;
+            color: $grayFont;
+        }
+    }
+    div.dropdown{
+        display: none;
+        position: absolute;
+    }
+    @include breakpoint(mobile){
+        @include dropdown($redFont);
+    }
+    aside ul{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        @include breakpoint(mobile){
+            display: none;
+        }
+        li:nth-of-type(2) a{
+            color: $redFont;
+        }
+        li:nth-of-type(3) a{
+            text-decoration: none;
+            color: white;
+            background-color: $redFont;
+            padding: 10px 30px;
+            border-radius: 10px;
+
+        }
+    }
+}
